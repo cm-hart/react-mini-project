@@ -1,7 +1,10 @@
 import CreatureList from "./components/CreatureList.jsx";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  const [showCreatures, setShowCreatures] = useState(false);
+
   const creaturesData = [
     {
       id: 1,
@@ -29,12 +32,25 @@ function App() {
     },
   ];
 
+  function clickHandler() {
+    setShowCreatures(!showCreatures);
+  }
+
   return (
+
     <div className="center-wrapper">
+      {showCreatures ? (
       <div className="app-container">
         <h1>Creatures of Eldoria</h1>
         <CreatureList creatures={creaturesData} />
       </div>
+      ) : (
+        <div className="buttonWrapper">
+        <button onClick={clickHandler}>
+          Click here to see the creatures!
+        </button>
+        </div>
+      )}
     </div>
   );
 }
