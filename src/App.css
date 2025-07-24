@@ -1,0 +1,69 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.creature-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+h2 {
+  grid-column: 1 / -1; /* Make heading span all columns */
+  text-align: center;
+  color: #34495e;
+  margin-bottom: 20px;
+}
+
+.creature-card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.creature-card h3 {
+  color: #e74c3c;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.creature-card p {
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.abilities-section h4 {
+  color: #27ae60;
+  margin-bottom: 8px;
+}
+
+.abilities-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.abilities-list li {
+  margin-bottom: 5px;
+}
