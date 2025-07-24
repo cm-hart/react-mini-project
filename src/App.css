@@ -6,8 +6,17 @@ body {
   color: #333;
 }
 
+.center-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+
 .app-container {
   max-width: 900px;
+  /* height: 80vh; */
   margin: 0 auto;
   padding: 20px;
   background-color: #fff;
